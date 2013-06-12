@@ -153,6 +153,7 @@
 	<script>
 		$('.thing').waypoint(function(direction){	// instance
 	 		$(this).addClass(this.getAttribute('lazyClass')); // calls the attribute lazyClass and applies the style related to it
+			//$(this).addClass(this.dataset.lazyClass); gets the lazyClass with html5 dataset		
 		}, {
 			offset: '150%', // sets the space between the top of the viewport and the element (in this case 150%)
 			triggerOnce: true // once triggered, die
